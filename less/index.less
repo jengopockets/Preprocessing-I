@@ -215,14 +215,16 @@ section {
 	margin-left: 10%;
 	margin-right: 10%;
 	background-color: blue;
-	color: orange;
+	color: black;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 
 	div {
-		border: 2px dashed black;
+		border: none;
 		width: 30%;
+		border-radius: 16px;
+
 
 		ul {
 			display: flex;
@@ -230,31 +232,76 @@ section {
 			text-align: center;
 
 			li {
-				border: 2px solid orangered;
+				border: 2px solid orange;
+				background-color: orangered;
+				border-radius: 16px;
 				padding: 2rem;
 				font-size: @text-medium;
 			}
 		}
+
 	}
 
 	h1 {
 		font-size: @text-large;
 		text-align: center;
+		color: orangered;
+	}
+
+	h2 {
+		font-size: @text-medium;
+		text-align: center;
+		background-color: orangered;
+		border: 2px solid orange;
+		border-radius: 16px;
+	}
+
+	p {
+		background-color: orangered;
+		border: 2px solid orange;
+		border-radius: 16px;
+	}
+
+	img {
+		width: 100%;
+		text-align: center;
+		border-radius: 16px;
+		border: 2px solid orange;
+	}
+
+}
+
+article {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	background-color: blue;
+	color: black;
+	display: flex;
+	justify-content: space-around;
+
+	div {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		h2 {
+			font-size: @text-large
+		}
+
+		ul {
+			font-size: @text-medium;
+			display: flex;
+			flex-direction: column;
+
+			li {
+				border: 1px solid orangered;
+			}
+		}
 	}
 
 	h2 {
 		font-size: @text-medium;
 		text-align: center;
 	}
-
-	p {
-		font-size: @text-small;
-		text-align: center;
-	}
-
-	img {
-		width: 100%;
-		text-align: center;
-	}
-
 }
