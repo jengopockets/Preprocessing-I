@@ -141,8 +141,8 @@ table {
 }
 
 @text-small: 1rem;
-@text-medium: 1.5rem;
-@text-large: 2rem;
+@text-medium: 2.5rem;
+@text-large: 4rem;
 
 html,
 body {
@@ -190,8 +190,9 @@ header {
 	.fa:hover {
 		opacity: 0.7;
 
-	
+
 	}
+
 	img {
 		font-size: 30px;
 		width: 100px;
@@ -201,23 +202,59 @@ header {
 		border-radius: 50%;
 		border: 2px dashed black;
 	}
+
+	img:hover {
+		opacity: 0.7;
+	}
 }
-section{
+
+section {
 	border: 2px dashed blue;
 	height: auto;
 	margin-top: 5rem;
 	margin-left: 10%;
-	margin-right:10%;
+	margin-right: 10%;
 	background-color: blue;
-	color: white;
-	h1{
+	color: orange;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	div {
+		border: 2px dashed black;
+		width: 30%;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			li {
+				border: 2px solid orangered;
+				padding: 2rem;
+				font-size: @text-medium;
+			}
+		}
+	}
+
+	h1 {
 		font-size: @text-large;
+		text-align: center;
 	}
-	h2{
+
+	h2 {
 		font-size: @text-medium;
+		text-align: center;
 	}
-	p{
+
+	p {
 		font-size: @text-small;
+		text-align: center;
+	}
+
+	img {
+		width: 100%;
+		text-align: center;
 	}
 
 }
