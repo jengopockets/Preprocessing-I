@@ -4,19 +4,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,25 +92,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -50,10 +137,178 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+@text-small: 1rem;
+@text-medium: 2.5rem;
+@text-large: 4rem;
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background-color: orangered;
 }
 
+header {
+	text-align: center;
+	background-color: blue;
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		border: 2px dashed black;
+
+		.fa {
+			padding: 20px;
+			font-size: 30px;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 50%;
+			border: 2px dashed black;
+		}
+
+		.fa-facebook {
+			background: #3B5998;
+			color: white;
+		}
+
+		.fa-linkedin {
+			background: #007bb5;
+			color: white;
+		}
+
+		.fa-github {
+			background: rgb(201, 10, 10);
+			color: white;
+		}
+	}
+
+	.fa:hover {
+		opacity: 0.7;
+
+
+	}
+
+	img {
+		font-size: 30px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+		border: 2px dashed black;
+	}
+
+	img:hover {
+		opacity: 0.7;
+	}
+}
+
+section {
+	border: 2px dashed blue;
+	height: auto;
+	margin-top: 5rem;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: blue;
+	color: black;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 16px;
+
+	div {
+		border: none;
+		width: 30%;
+		border-radius: 16px;
+
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			li {
+				border: 2px solid orange;
+				background-color: orangered;
+				border-radius: 16px;
+				padding: 2rem;
+				font-size: @text-medium;
+			}
+		}
+
+	}
+
+	h1 {
+		font-size: @text-large;
+		text-align: center;
+		color: orangered;
+	}
+
+	h2 {
+		font-size: @text-medium;
+		text-align: center;
+		background-color: orangered;
+		border: 2px solid orange;
+		border-radius: 16px;
+	}
+
+	p {
+		background-color: orangered;
+		border: 2px solid orange;
+		border-radius: 16px;
+	}
+
+	img {
+		width: 100%;
+		text-align: center;
+		border-radius: 16px;
+		border: 4px solid orange;
+	}
+
+}
+
+article {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 5%;
+	background-color: blue;
+	color: black;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 16px;
+
+	div {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: space-around;
+
+		h2 {
+			font-size: @text-large;
+			color: orangered;
+		}
+
+		ul {
+			font-size: @text-medium;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+
+			li {
+				border: 1px solid orange;
+				border-radius: 16px;
+				background-color: orangered;
+			}
+		}
+	}
+
+	h2 {
+		font-size: @text-medium;
+		text-align: center;
+	}
+}
